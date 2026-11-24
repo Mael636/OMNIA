@@ -1,3 +1,3 @@
 # OMNIA pour Windows
 
-Projet Electron + electron-builder (NSIS). Depuis la racine du projet : `python scripts/fetch-cores.py`, puis `cd windows && npm install && npm run dist`. Le workflow GitHub Actions télécharge et vérifie les composants EmulatorJS 4.2.3 avant de produire l’installateur et de l’attacher à la Release du tag.
+Projet Electron + electron-builder (NSIS) prêt à construire sur Windows. Depuis ce dossier : `npm install`, puis `npm run dist`. Le job GitHub Actions `build-windows.yml` produit et publie l’installateur NSIS comme artefact. Aucun `.exe` n’a été construit dans le bac Linux : npm y est défectueux et Wine n’est pas configuré.

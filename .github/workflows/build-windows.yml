@@ -3,27 +3,19 @@ on:
   workflow_dispatch:
   push:
     tags: ["v*"]
-permissions:
-  contents: write
 jobs:
   build:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Download and verify EmulatorJS 4.2.3 cores
-        shell: pwsh
-        run: ./scripts/fetch-cores.ps1
       - run: npm install
         working-directory: windows
       - run: npm run dist
         working-directory: windows
-      - uses: softprops/action-gh-release@v2
+      - uses: actions/upload-artifact@v4
         with:
-          files: windows/dist/*.exe
-          generate_release_notes: true
+          name: OMNIA-Windows-Installer
+          path: windows/dist/*.exe

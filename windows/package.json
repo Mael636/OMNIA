@@ -3,7 +3,40 @@
   "version": "1.0.0",
   "description": "OMNIA local game library",
   "main": "main.cjs",
-  "scripts": {"start": "electron .", "dist": "electron-builder --win nsis"},
-  "devDependencies": {"electron": "^34.0.0", "electron-builder": "^25.1.8"},
-  "build": {"appId": "org.omnia.desktop", "productName": "OMNIA", "directories": {"output": "dist", "app": ".."}, "files": ["web/**/*", "windows/main.cjs", "windows/preload.cjs", "windows/package.json", "LICENSE", "licenses/**/*"], "win": {"target": ["nsis"], "icon": "../web/assets/icon-512.png"}, "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true, "createStartMenuShortcut": true}}
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "org.omnia.desktop",
+    "productName": "OMNIA",
+    "directories": {
+      "output": "dist",
+      "app": ".."
+    },
+    "files": [
+      "web/**/*",
+      "windows/main.cjs",
+      "windows/preload.cjs",
+      "windows/package.json",
+      "LICENSE",
+      "licenses/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "../web/assets/icon-512.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
 }
