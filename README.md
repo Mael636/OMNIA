@@ -27,6 +27,10 @@ Le catalogue distingue les systèmes disponibles, partiels et non pris en charge
 - `windows/` — application Electron et configuration NSIS. Depuis la racine : `python scripts/fetch-cores.py`, puis `cd windows && npm install && npm run dist`. L’installeur est généré dans `windows/dist/`. Le workflow `.github/workflows/build-windows.yml` télécharge les cœurs avant `electron-builder`, construit l’installeur Windows sur les tags `v*` et l’ajoute à la Release.
 - `docs/` — informations techniques.
 
+## iPhone v2.1
+
+La version autonome pour iPhone est disponible dans [`iPhone/`](iPhone/). v2.1 ajoute la Nintendo DS (melonDS et desmume2015) et corrige l’import ZIP. Les tests d’import automatisés sont fournis, mais aucun test réel sur iPhone ni lancement de jeu n’a été effectué ; la compatibilité et les performances sur appareil restent donc non vérifiées. Aucun ROM ni BIOS n’est inclus.
+
 ## Licence et sécurité
 
 Le code OMNIA est sous licence MIT. EmulatorJS est sous GPL-3.0 ; la licence upstream est fournie dans `licenses/EmulatorJS-LICENSE.txt`. Les cœurs ont leurs propres licences et notices : consultez celles des composants upstream avant toute redistribution, notamment commerciale. Aucun firmware/BIOS ni ROM n’est inclus. Les données de bibliothèque ne sont pas chiffrées par OMNIA.
