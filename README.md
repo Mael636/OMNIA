@@ -1,15 +1,7 @@
-# OMNIA
+# OMNIA — dépôt GitHub incomplet
 
-Bibliothèque locale multi-systèmes en français : PWA sobre, stockage IndexedDB, catalogue de 79 systèmes, EmulatorJS 4.2.3, application Windows Electron/NSIS et dossier iPhone. Aucun BIOS ni ROM n'est fourni.
+Ce dépôt public est un **snapshot documentaire incomplet**. Il ne contient pas le code source intégral OMNIA, les fichiers web/iPhone, Electron/NSIS, le runtime complet ni les cœurs WASM. Les fichiers présents dans cette branche ne constituent pas une version exécutable du projet.
 
-## Source et assets
+L’archive source complète et l’archive iPhone ont été produites séparément dans le cadre de la tâche, mais leur contenu n’a pas pu être poussé via l’outil GitHub utilisé. Aucun tag de publication, workflow opérationnel ni installeur Windows n’est à annoncer depuis ce dépôt.
 
-Les archives de livraison complètes sont `OMNIA-repo.zip` et `OMNIA-iPhone.zip` dans les sorties de la tâche. Le dépôt GitHub ne contient pas encore ces archives ni le code complet. Les cœurs EmulatorJS sont volumineux et doivent être récupérés séparément avant exécution ; vérifier provenance et licences upstream. La version locale inclut un script de téléchargement avec manifeste SHA-256.
-
-## Documentation
-
-- `docs/TECHNICAL.md` — état des systèmes et notes de compatibilité.
-- `windows/README.md` — construction Electron/NSIS.
-- `ios/OMNIA-iPhone/README.md` — utilisation sur iPhone.
-
-Le statut des systèmes et la compatibilité varient selon le cœur, le jeu, les BIOS et l'appareil. Les données de la bibliothèque sont locales au navigateur.
+OMNIA vise une bibliothèque PWA locale en français, avec catalogue multi-systèmes et EmulatorJS. Aucun BIOS ni jeu n’est fourni. Avant toute distribution, respecter les licences upstream des composants et utiliser uniquement des copies de jeux légalement détenues.
