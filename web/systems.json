@@ -1,14 +1,1191 @@
 [
-  {"id":"atari2600","name":"Atari 2600","manufacturer":"Atari","extensions":[".a26",".bin",".rom"],"core":"stella2014","emulatorSystem":"atari2600","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"atari5200","name":"Atari 5200","manufacturer":"Atari","extensions":[".a52",".bin",".rom"],"core":"a5200","emulatorSystem":"atari5200","support":"Partiel","playable":true,"bios":"BIOS souvent requis","note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"atari7800","name":"Atari 7800","manufacturer":"Atari","extensions":[".a78",".bin",".rom"],"core":"prosystem","emulatorSystem":"atari7800","support":"Partiel","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"jaguar","name":"Atari Jaguar","manufacturer":"Atari","extensions":[".j64",".jag",".rom"],"core":"virtualjaguar","emulatorSystem":"jaguar","support":"Partiel","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"lynx","name":"Atari Lynx","manufacturer":"Atari","extensions":[".lnx",".lyx"],"core":"handy","emulatorSystem":"lynx","support":"Partiel","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"wswan","name":"WonderSwan","manufacturer":"Bandai","extensions":[".ws",".wsc"],"core":"mednafen_wswan","emulatorSystem":"ws","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"wswancolor","name":"WonderSwan Color","manufacturer":"Bandai","extensions":[".wsc"],"core":"mednafen_wswan","emulatorSystem":"ws","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"coleco","name":"ColecoVision","manufacturer":"Coleco","extensions":[".col",".rom",".bin"],"core":"gearcoleco","emulatorSystem":"coleco","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"nes","name":"NES","manufacturer":"Nintendo","extensions":[".nes"],"core":"fceumm","emulatorSystem":"nes","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"snes","name":"Super Nintendo","manufacturer":"Nintendo","extensions":[".sfc",".smc"],"core":"snes9x","emulatorSystem":"snes","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"gb","name":"Game Boy","manufacturer":"Nintendo","extensions":[".gb"],"core":"gambatte","emulatorSystem":"gb","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."},
-  {"id":"gba","name":"Game Boy Advance","manufacturer":"Nintendo","extensions":[".gba"],"core":"mgba","emulatorSystem":"gba","support":"Complet","playable":true,"bios":null,"note":"Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."}
+  {
+    "id": "atari2600",
+    "name": "Atari 2600",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".a26",
+      ".bin",
+      ".rom"
+    ],
+    "core": "stella2014",
+    "emulatorSystem": "atari2600",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "atari5200",
+    "name": "Atari 5200",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".a52",
+      ".bin",
+      ".rom"
+    ],
+    "core": "a5200",
+    "emulatorSystem": "atari5200",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS souvent requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "atari7800",
+    "name": "Atari 7800",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".a78",
+      ".bin",
+      ".rom"
+    ],
+    "core": "prosystem",
+    "emulatorSystem": "atari7800",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "jaguar",
+    "name": "Atari Jaguar",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".j64",
+      ".jag",
+      ".rom"
+    ],
+    "core": "virtualjaguar",
+    "emulatorSystem": "jaguar",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "lynx",
+    "name": "Atari Lynx",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".lnx",
+      ".lyx"
+    ],
+    "core": "handy",
+    "emulatorSystem": "lynx",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "atari8",
+    "name": "Atari 8-bit",
+    "manufacturer": "Atari",
+    "extensions": [
+      ".atr",
+      ".xex",
+      ".car",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "BIOS selon le logiciel",
+    "note": "BIOS selon le logiciel"
+  },
+  {
+    "id": "astrocade",
+    "name": "Bally Astrocade",
+    "manufacturer": "Bally",
+    "extensions": [
+      ".bin",
+      ".zip"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "wswan",
+    "name": "WonderSwan",
+    "manufacturer": "Bandai",
+    "extensions": [
+      ".ws",
+      ".wsc"
+    ],
+    "core": "mednafen_wswan",
+    "emulatorSystem": "ws",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "wswancolor",
+    "name": "WonderSwan Color",
+    "manufacturer": "Bandai",
+    "extensions": [
+      ".wsc"
+    ],
+    "core": "mednafen_wswan",
+    "emulatorSystem": "ws",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "coleco",
+    "name": "ColecoVision",
+    "manufacturer": "Coleco",
+    "extensions": [
+      ".col",
+      ".rom",
+      ".bin"
+    ],
+    "core": "gearcoleco",
+    "emulatorSystem": "coleco",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "c64",
+    "name": "Commodore 64",
+    "manufacturer": "Commodore",
+    "extensions": [
+      ".d64",
+      ".t64",
+      ".prg",
+      ".crt",
+      ".tap"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "ROM système selon le jeu",
+    "note": "ROM système selon le jeu"
+  },
+  {
+    "id": "amiga",
+    "name": "Amiga",
+    "manufacturer": "Commodore",
+    "extensions": [
+      ".adf",
+      ".adz",
+      ".uae"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Kickstart requis selon modèle",
+    "note": "Kickstart requis selon modèle"
+  },
+  {
+    "id": "channelf",
+    "name": "Channel F",
+    "manufacturer": "Fairchild",
+    "extensions": [
+      ".chf",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "intellivision",
+    "name": "Intellivision",
+    "manufacturer": "Mattel",
+    "extensions": [
+      ".int",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "BIOS requis",
+    "note": "BIOS requis"
+  },
+  {
+    "id": "microvision",
+    "name": "Microvision",
+    "manufacturer": "Milton Bradley",
+    "extensions": [
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "odyssey2",
+    "name": "Odyssey²",
+    "manufacturer": "Magnavox",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "nes",
+    "name": "NES",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".nes"
+    ],
+    "core": "fceumm",
+    "emulatorSystem": "nes",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "fds",
+    "name": "Famicom Disk System",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".fds"
+    ],
+    "core": "fceumm",
+    "emulatorSystem": "nes",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS FDS requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".sfc",
+      ".smc"
+    ],
+    "core": "snes9x",
+    "emulatorSystem": "snes",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "n64",
+    "name": "Nintendo 64",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".z64",
+      ".n64",
+      ".v64"
+    ],
+    "core": "mupen64plus_next",
+    "emulatorSystem": "n64",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "64dd",
+    "name": "Nintendo 64DD",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".ndd",
+      ".d64"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "BIOS requis",
+    "note": "BIOS requis"
+  },
+  {
+    "id": "gamecube",
+    "name": "GameCube",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".iso",
+      ".gcm"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "BIOS requis",
+    "note": "BIOS requis"
+  },
+  {
+    "id": "wii",
+    "name": "Wii",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".iso",
+      ".wbfs"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non pris en charge par EmulatorJS",
+    "note": "Non pris en charge par EmulatorJS"
+  },
+  {
+    "id": "wiiu",
+    "name": "Wii U",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".wud",
+      ".wux"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible intégré",
+    "note": "Aucun cœur navigateur compatible intégré"
+  },
+  {
+    "id": "switch",
+    "name": "Nintendo Switch",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".nsp",
+      ".xci"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible intégré",
+    "note": "Aucun cœur navigateur compatible intégré"
+  },
+  {
+    "id": "gb",
+    "name": "Game Boy",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".gb"
+    ],
+    "core": "gambatte",
+    "emulatorSystem": "gb",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "gbc",
+    "name": "Game Boy Color",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".gbc",
+      ".gb"
+    ],
+    "core": "gambatte",
+    "emulatorSystem": "gb",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "gba",
+    "name": "Game Boy Advance",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".gba"
+    ],
+    "core": "mgba",
+    "emulatorSystem": "gba",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "nds",
+    "name": "Nintendo DS",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".nds"
+    ],
+    "core": "melonds",
+    "emulatorSystem": "nds",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "dsi",
+    "name": "Nintendo DSi",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".nds",
+      ".app"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "DSi non pris en charge par le cœur DS",
+    "note": "DSi non pris en charge par le cœur DS"
+  },
+  {
+    "id": "3ds",
+    "name": "Nintendo 3DS",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".3ds",
+      ".cia"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible intégré",
+    "note": "Aucun cœur navigateur compatible intégré"
+  },
+  {
+    "id": "virtualboy",
+    "name": "Virtual Boy",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".vb"
+    ],
+    "core": "beetle_vb",
+    "emulatorSystem": "vb",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "pokemonmini",
+    "name": "Pokémon Mini",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".min",
+      ".pok"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "gamewatch",
+    "name": "Game & Watch",
+    "manufacturer": "Nintendo",
+    "extensions": [
+      ".mgw"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "sg1000",
+    "name": "SG-1000",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".sg",
+      ".bin"
+    ],
+    "core": "genesis_plus_gx",
+    "emulatorSystem": "segaMS",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "mastersystem",
+    "name": "Master System",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".sms"
+    ],
+    "core": "genesis_plus_gx",
+    "emulatorSystem": "segaMS",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "gamegear",
+    "name": "Game Gear",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".gg"
+    ],
+    "core": "genesis_plus_gx",
+    "emulatorSystem": "segaGG",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "megadrive",
+    "name": "Mega Drive / Genesis",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".md",
+      ".gen",
+      ".bin"
+    ],
+    "core": "genesis_plus_gx",
+    "emulatorSystem": "segaMD",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "segacd",
+    "name": "Sega CD / Mega-CD",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".cue",
+      ".chd",
+      ".iso"
+    ],
+    "core": "genesis_plus_gx",
+    "emulatorSystem": "segaCD",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS régional requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "sega32x",
+    "name": "Sega 32X",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".32x",
+      ".bin"
+    ],
+    "core": "picodrive",
+    "emulatorSystem": "sega32x",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "saturn",
+    "name": "Sega Saturn",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".cue",
+      ".chd",
+      ".iso"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur Saturn livré dans ce build",
+    "note": "Pas de cœur Saturn livré dans ce build"
+  },
+  {
+    "id": "dreamcast",
+    "name": "Dreamcast",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".cdi",
+      ".gdi",
+      ".chd"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur Dreamcast livré dans ce build",
+    "note": "Pas de cœur Dreamcast livré dans ce build"
+  },
+  {
+    "id": "segapico",
+    "name": "Sega Pico",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".bin",
+      ".md"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "psx",
+    "name": "PlayStation",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".cue",
+      ".chd",
+      ".pbp",
+      ".iso"
+    ],
+    "core": "pcsx_rearmed",
+    "emulatorSystem": "psx",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS recommandé / parfois requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "ps2",
+    "name": "PlayStation 2",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".iso",
+      ".chd"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible intégré",
+    "note": "Aucun cœur navigateur compatible intégré"
+  },
+  {
+    "id": "ps3",
+    "name": "PlayStation 3",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".iso",
+      ".pkg"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "ps4",
+    "name": "PlayStation 4 (expérimental)",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".pkg"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible",
+    "note": "Aucun cœur navigateur compatible"
+  },
+  {
+    "id": "ps5",
+    "name": "PlayStation 5 (expérimental)",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".pkg"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur navigateur compatible",
+    "note": "Aucun cœur navigateur compatible"
+  },
+  {
+    "id": "psp",
+    "name": "PlayStation Portable",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".iso",
+      ".cso",
+      ".pbp"
+    ],
+    "core": "ppsspp",
+    "emulatorSystem": "psp",
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Threads requis par PPSSPP : compatibilité navigateur limitée",
+    "note": "Paquet EmulatorJS fourni uniquement en variante threadée, avec assets distincts ; threads/isolation cross-origin requis, démarrage non validé. Non annoncé comme jouable."
+  },
+  {
+    "id": "psvita",
+    "name": "PlayStation Vita",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".vpk",
+      ".pkg"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "pocketstation",
+    "name": "PocketStation",
+    "manufacturer": "Sony",
+    "extensions": [
+      ".gme"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "xbox",
+    "name": "Xbox",
+    "manufacturer": "Microsoft",
+    "extensions": [
+      ".iso",
+      ".xiso"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "xbox360",
+    "name": "Xbox 360 (partiel)",
+    "manufacturer": "Microsoft",
+    "extensions": [
+      ".iso"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur navigateur distribué par EmulatorJS",
+    "note": "Pas de cœur navigateur distribué par EmulatorJS"
+  },
+  {
+    "id": "pce",
+    "name": "PC Engine / TurboGrafx-16",
+    "manufacturer": "NEC",
+    "extensions": [
+      ".pce"
+    ],
+    "core": "mednafen_pce",
+    "emulatorSystem": "pce",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "pcecd",
+    "name": "PC Engine CD / Super CD-ROM²",
+    "manufacturer": "NEC",
+    "extensions": [
+      ".cue",
+      ".chd",
+      ".iso"
+    ],
+    "core": "mednafen_pce",
+    "emulatorSystem": "pce",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS CD requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "pcfx",
+    "name": "PC-FX",
+    "manufacturer": "NEC",
+    "extensions": [
+      ".cue",
+      ".chd",
+      ".iso"
+    ],
+    "core": "mednafen_pcfx",
+    "emulatorSystem": "pcfx",
+    "support": "Partiel",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "pc88",
+    "name": "PC-88",
+    "manufacturer": "NEC",
+    "extensions": [
+      ".d88",
+      ".88d"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "pc98",
+    "name": "PC-98",
+    "manufacturer": "NEC",
+    "extensions": [
+      ".d88",
+      ".fdi"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "neogeo",
+    "name": "Neo Geo",
+    "manufacturer": "SNK",
+    "extensions": [
+      ".zip",
+      ".neo"
+    ],
+    "core": "fbneo",
+    "emulatorSystem": "arcade",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS Neo Geo requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "neogeocd",
+    "name": "Neo Geo CD",
+    "manufacturer": "SNK",
+    "extensions": [
+      ".cue",
+      ".chd"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur livré",
+    "note": "Pas de cœur livré"
+  },
+  {
+    "id": "ngp",
+    "name": "Neo Geo Pocket",
+    "manufacturer": "SNK",
+    "extensions": [
+      ".ngp"
+    ],
+    "core": "mednafen_ngp",
+    "emulatorSystem": "ngp",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "ngpc",
+    "name": "Neo Geo Pocket Color",
+    "manufacturer": "SNK",
+    "extensions": [
+      ".ngc",
+      ".ngp"
+    ],
+    "core": "mednafen_ngp",
+    "emulatorSystem": "ngp",
+    "support": "Complet",
+    "playable": true,
+    "bios": null,
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "3do",
+    "name": "3DO",
+    "manufacturer": "Panasonic",
+    "extensions": [
+      ".iso",
+      ".cue",
+      ".chd"
+    ],
+    "core": "opera",
+    "emulatorSystem": "3do",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "BIOS requis",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "cdi",
+    "name": "CD-i",
+    "manufacturer": "Philips",
+    "extensions": [
+      ".chd",
+      ".cue",
+      ".iso"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Aucun cœur CD-i livré",
+    "note": "Aucun cœur CD-i livré"
+  },
+  {
+    "id": "vectrex",
+    "name": "Vectrex",
+    "manufacturer": "General Consumer Electronics",
+    "extensions": [
+      ".vec",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "supervision",
+    "name": "Watara Supervision",
+    "manufacturer": "Watara",
+    "extensions": [
+      ".sv",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "arcadia",
+    "name": "Arcadia 2001",
+    "manufacturer": "Emerson",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "studio2",
+    "name": "RCA Studio II",
+    "manufacturer": "RCA",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "creativision",
+    "name": "CreatiVision",
+    "manufacturer": "VTech",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "vc4000",
+    "name": "Interton VC 4000",
+    "manufacturer": "Interton",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "odyssey3",
+    "name": "Odyssey³",
+    "manufacturer": "Magnavox",
+    "extensions": [
+      ".bin",
+      ".rom"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": null,
+    "note": "Aucun cœur WASM compatible et intégré dans cette version."
+  },
+  {
+    "id": "arcade",
+    "name": "Arcade — MAME / FBNeo",
+    "manufacturer": "Arcade",
+    "extensions": [
+      ".zip",
+      ".7z"
+    ],
+    "core": "fbneo",
+    "emulatorSystem": "arcade",
+    "support": "Partiel",
+    "playable": true,
+    "bios": "ROM sets non inclus ; compatibilité dépend du core/jeu",
+    "note": "Core WASM local présent ; fonctionnement dépend du fichier et éventuels prérequis BIOS."
+  },
+  {
+    "id": "naomi",
+    "name": "Sega Naomi",
+    "manufacturer": "Sega / Arcade",
+    "extensions": [
+      ".zip",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur Naomi livré",
+    "note": "Pas de cœur Naomi livré"
+  },
+  {
+    "id": "naomi2",
+    "name": "Sega Naomi 2",
+    "manufacturer": "Sega / Arcade",
+    "extensions": [
+      ".zip",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "atomiswave",
+    "name": "Atomiswave",
+    "manufacturer": "Sammy / Arcade",
+    "extensions": [
+      ".zip",
+      ".bin"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Pas de cœur Atomiswave livré",
+    "note": "Pas de cœur Atomiswave livré"
+  },
+  {
+    "id": "model2",
+    "name": "Sega Model 2",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".zip"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "model3",
+    "name": "Sega Model 3",
+    "manufacturer": "Sega",
+    "extensions": [
+      ".zip"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Non disponible dans le navigateur",
+    "note": "Non disponible dans le navigateur"
+  },
+  {
+    "id": "taitox",
+    "name": "Taito Type X",
+    "manufacturer": "Taito / Arcade",
+    "extensions": [
+      ".zip",
+      ".iso"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Plateforme PC dédiée, non prise en charge",
+    "note": "Plateforme PC dédiée, non prise en charge"
+  },
+  {
+    "id": "pinball",
+    "name": "Flipper virtuel",
+    "manufacturer": "Divers",
+    "extensions": [
+      ".vpx",
+      ". table"
+    ],
+    "core": null,
+    "emulatorSystem": null,
+    "support": "Non disponible dans le navigateur",
+    "playable": false,
+    "bios": "Formats propriétaires, aucun cœur intégré",
+    "note": "Formats propriétaires, aucun cœur intégré"
+  }
 ]
